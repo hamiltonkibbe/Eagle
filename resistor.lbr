@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.0">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -11016,6 +11016,66 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <text x="-5.08" y="1.27" size="1.27" layer="25">&gt;NAME</text>
 <text x="-5.08" y="-1.27" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="R0402L">
+<smd name="1" x="-0.5" y="0" dx="0.5" dy="0.6" layer="1" roundness="20"/>
+<smd name="2" x="0.5" y="0" dx="0.5" dy="0.6" layer="1" roundness="20"/>
+<wire x1="-0.8" y1="0.4" x2="0.8" y2="0.4" width="0.05" layer="51"/>
+<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.05" layer="51"/>
+<wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.05" layer="51"/>
+<wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.05" layer="51"/>
+<wire x1="-0.5" y1="0.25" x2="-0.25" y2="0.25" width="0.05" layer="51"/>
+<wire x1="-0.25" y1="0.25" x2="0.25" y2="0.25" width="0.05" layer="51"/>
+<wire x1="0.25" y1="0.25" x2="0.5" y2="0.25" width="0.05" layer="51"/>
+<wire x1="0.5" y1="0.25" x2="0.5" y2="-0.25" width="0.05" layer="51"/>
+<wire x1="0.5" y1="-0.25" x2="0.25" y2="-0.25" width="0.05" layer="51"/>
+<wire x1="0.25" y1="-0.25" x2="-0.25" y2="-0.25" width="0.05" layer="51"/>
+<wire x1="-0.25" y1="-0.25" x2="-0.5" y2="-0.25" width="0.05" layer="51"/>
+<wire x1="-0.5" y1="-0.25" x2="-0.5" y2="0.25" width="0.05" layer="51"/>
+<wire x1="-0.25" y1="0.25" x2="-0.25" y2="-0.25" width="0.05" layer="51"/>
+<wire x1="0.25" y1="0.25" x2="0.25" y2="-0.25" width="0.05" layer="51"/>
+<text x="-0.8" y="0.5" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.8" y="-1.75" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="R0402N">
+<smd name="1" x="-0.5" y="0" dx="0.5" dy="0.6" layer="1" roundness="20"/>
+<smd name="2" x="0.5" y="0" dx="0.5" dy="0.6" layer="1" roundness="20"/>
+<wire x1="-0.85" y1="0.45" x2="0.85" y2="0.45" width="0.05" layer="51"/>
+<wire x1="0.85" y1="0.45" x2="0.85" y2="-0.45" width="0.05" layer="51"/>
+<wire x1="0.85" y1="-0.45" x2="-0.85" y2="-0.45" width="0.05" layer="51"/>
+<wire x1="-0.85" y1="-0.45" x2="-0.85" y2="0.45" width="0.05" layer="51"/>
+<wire x1="-0.5" y1="0.25" x2="-0.25" y2="0.25" width="0.05" layer="51"/>
+<wire x1="-0.25" y1="0.25" x2="0.25" y2="0.25" width="0.05" layer="48"/>
+<wire x1="0.25" y1="0.25" x2="0.5" y2="0.25" width="0.05" layer="51"/>
+<wire x1="0.5" y1="0.25" x2="0.5" y2="-0.25" width="0.05" layer="51"/>
+<wire x1="0.5" y1="-0.25" x2="0.25" y2="-0.25" width="0.05" layer="51"/>
+<wire x1="0.25" y1="-0.25" x2="-0.25" y2="-0.25" width="0.05" layer="51"/>
+<wire x1="-0.25" y1="-0.25" x2="-0.5" y2="-0.25" width="0.05" layer="51"/>
+<wire x1="-0.5" y1="-0.25" x2="-0.5" y2="0.25" width="0.05" layer="51"/>
+<wire x1="-0.25" y1="0.25" x2="-0.25" y2="-0.25" width="0.05" layer="51"/>
+<wire x1="0.25" y1="0.25" x2="0.25" y2="-0.25" width="0.05" layer="51"/>
+<text x="-0.85" y="0.5" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.9" y="-1.85" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="R0402M">
+<smd name="1" x="-0.5" y="0" dx="0.5" dy="0.6" layer="1" roundness="20"/>
+<smd name="2" x="0.5" y="0" dx="0.5" dy="0.6" layer="1" roundness="20"/>
+<wire x1="-0.9" y1="0.5" x2="0.9" y2="0.5" width="0.05" layer="51"/>
+<wire x1="0.9" y1="0.5" x2="0.9" y2="-0.5" width="0.05" layer="51"/>
+<wire x1="0.9" y1="-0.5" x2="-0.9" y2="-0.5" width="0.05" layer="51"/>
+<wire x1="-0.9" y1="-0.5" x2="-0.9" y2="0.5" width="0.05" layer="51"/>
+<wire x1="-0.5" y1="0.25" x2="-0.25" y2="0.25" width="0.05" layer="51"/>
+<wire x1="-0.25" y1="0.25" x2="0.25" y2="0.25" width="0.05" layer="51"/>
+<wire x1="0.25" y1="0.25" x2="0.5" y2="0.25" width="0.05" layer="51"/>
+<wire x1="0.5" y1="0.25" x2="0.5" y2="-0.25" width="0.05" layer="51"/>
+<wire x1="0.5" y1="-0.25" x2="0.25" y2="-0.25" width="0.05" layer="51"/>
+<wire x1="0.25" y1="-0.25" x2="-0.25" y2="-0.25" width="0.05" layer="51"/>
+<wire x1="-0.25" y1="-0.25" x2="-0.5" y2="-0.25" width="0.05" layer="51"/>
+<wire x1="-0.5" y1="-0.25" x2="-0.5" y2="0.25" width="0.05" layer="51"/>
+<wire x1="-0.25" y1="0.25" x2="-0.25" y2="-0.25" width="0.05" layer="51"/>
+<wire x1="0.25" y1="0.25" x2="0.25" y2="-0.25" width="0.05" layer="51"/>
+<text x="-1" y="-1.9" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-0.9" y="0.55" size="1.27" layer="25">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="C-EU">
@@ -14702,6 +14762,33 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 </technologies>
 </device>
 <device name="0309/V" package="0309V">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="R0402L" package="R0402L">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="R0402N" package="R0402N">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="R0402M" package="R0402M">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
