@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -12003,6 +12003,34 @@ Source: www.microchip.com PIC16F1516.pdf</description>
 <wire x1="-10.16" y1="7.62" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-10.16" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+</symbol>
+<symbol name="PIC24FV32KA304">
+<pin name="VDD" x="0" y="20.32" length="middle" rot="R270"/>
+<pin name="!MCLR" x="-17.78" y="10.16" length="middle"/>
+<pin name="PGEC2" x="-17.78" y="7.62" length="middle"/>
+<pin name="PGED2" x="-17.78" y="5.08" length="middle"/>
+<pin name="RB0" x="-17.78" y="2.54" length="middle"/>
+<pin name="RB1" x="-17.78" y="0" length="middle"/>
+<pin name="RB2" x="-17.78" y="-2.54" length="middle"/>
+<pin name="OSCI" x="-17.78" y="-5.08" length="middle"/>
+<pin name="RB4" x="-17.78" y="-10.16" length="middle"/>
+<pin name="OSCO" x="-17.78" y="-7.62" length="middle"/>
+<pin name="VSS" x="0" y="-20.32" length="middle" rot="R90"/>
+<pin name="RA4" x="17.78" y="10.16" length="middle" rot="R180"/>
+<pin name="RB7" x="17.78" y="7.62" length="middle" rot="R180"/>
+<pin name="SCL1" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="VCAP" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="SDA1" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="RB12" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="RB13" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="RB14" x="17.78" y="-7.62" length="middle" rot="R180"/>
+<pin name="RB15" x="17.78" y="-10.16" length="middle" rot="R180"/>
+<text x="-12.7" y="17.78" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="-12.7" y1="15.24" x2="12.7" y2="15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="15.24" x2="12.7" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-15.24" x2="-12.7" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-15.24" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -29583,6 +29611,42 @@ Source: www.microchip.com PIC16F1516.pdf</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PIC24FV16KA301-I">
+<gates>
+<gate name="G$1" symbol="PIC24FV32KA304" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SS" package="SSOP20">
+<connects>
+<connect gate="G$1" pin="!MCLR" pad="1"/>
+<connect gate="G$1" pin="OSCI" pad="7"/>
+<connect gate="G$1" pin="OSCO" pad="8"/>
+<connect gate="G$1" pin="PGEC2" pad="2"/>
+<connect gate="G$1" pin="PGED2" pad="3"/>
+<connect gate="G$1" pin="RA4" pad="10"/>
+<connect gate="G$1" pin="RB0" pad="4"/>
+<connect gate="G$1" pin="RB1" pad="5"/>
+<connect gate="G$1" pin="RB12" pad="15"/>
+<connect gate="G$1" pin="RB13" pad="16"/>
+<connect gate="G$1" pin="RB14" pad="17"/>
+<connect gate="G$1" pin="RB15" pad="18"/>
+<connect gate="G$1" pin="RB2" pad="6"/>
+<connect gate="G$1" pin="RB4" pad="9"/>
+<connect gate="G$1" pin="RB7" pad="11"/>
+<connect gate="G$1" pin="SCL1" pad="12"/>
+<connect gate="G$1" pin="SDA1" pad="13"/>
+<connect gate="G$1" pin="VCAP" pad="14"/>
+<connect gate="G$1" pin="VDD" pad="20"/>
+<connect gate="G$1" pin="VSS" pad="19"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY_PN" value="PIC24FV32KA301-I/SS-ND" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
